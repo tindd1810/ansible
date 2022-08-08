@@ -1,0 +1,12 @@
+---
+- name: play1
+  hosts: servers
+  remote_user: ec2-user
+  become: yes
+  tasks:
+  - name: install nginx
+    command: apt install -y nginx1
+  - name: start nginx
+    service:
+      name: nginx
+      state: started
