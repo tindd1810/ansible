@@ -5,7 +5,7 @@
   become: yes
   tasks:
   - name: install nginx
-    command: apt install -y nginx1
+    command: apt install -y nginx
   - name: start nginx
     service:
       name: nginx
