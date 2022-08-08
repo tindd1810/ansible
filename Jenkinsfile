@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label "slave02-aws"
+        label "master"
     }
     stages{
         stage("Check ansible version"){
